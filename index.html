@@ -6,30 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS.css">
-    <script defer src="game.js"></script>
+    <link rel="stylesheet" href="menu-backup.css">
+   
+    <script defer src="imagefade.js"></script>
+    <script defer src="menu3.js"></script>
+     <!--<script defer src="items.js"></script>-->
     <title>Text Adventure</title>
 </head>
 
 <body>
-    <div class="container">
-        <div id="text">Text</div>
-        <div id="option-buttons" class="btn-grid">
-            <button class="btn">Option 1</button>
-            <button class="btn">Option 2</button>
-            <button class="btn">Option 3</button>
-            <button class="btn">Option 4</button>
-        </div>
+
+        <!--data-src can be used instead of img src and can then be references by JAVASCRIPT - maybe i can use data-src to consult a library of images based on a button press 
+        - no chance of a user going through the images too fast as each button press generates new dialogue-->
+        <header>
+        </header>
+       
+        <nav>
+            <div class="logo">
+                <h4>Inventory</h4>
+            
+           
+
+    <div style="pointer-events: auto;" class="burger" >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
     </div>
+    
+        </nav>
 
-    <div class="hero">
-        <img src="bunk.jpg" alt="">
+    </div>
     
-<audio controls autoplay>
+    <div class= "nav-links" id="inventory" >
+
+
+        <div id= "itemtext" class = "itemtext" >A test item!</div>
+
+        <!--<div id = "Div1" class = "Div1"> </div>-->
+       
+        
+        <!--onmouseover="reveal(this)" onmouseout="reveal1(this)"-->
     
-    <source src="THING.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+    <div id="imageContainer">
+    
+    
+</div>
+
+    </div>
+</div>
+
+
+        <div class="screencontainer">
+            <img id="screen" img src= "SCREEN.PNG"/>
+        </div>
+        
+        <div id= 'Blackbox' class='Blackbox'> 
+        </div>
+      
+    
+        <section id="image-section">
+            <div class="image">
+                <img id="room-image" />
+            </div>
+        </section>
+   
+        <section id="text-section">
+            <div class="text">
+                <div id="text">Text</div>
+            </div>
+       
+        </section>
+
+        
+
+        
+        <section id="option-section">
+            <div class="container" >
+            <div  id = "option-buttons" class="btn-grid" >
+            <button class="btn" id = "button1" >Option 1</button>
+            <button class="btn" id = "button2" >Option 2</button>
+            <button class="btn" id = "button3" >Option 3</button>
+            <button class="btn" id = "button4" >Option 4</button>
+            
+        </div>
+        <!--<I have no idea why this is not working</button>-->
+         <!--<button  class="btn" id = "TEST"  onclick="deleteValue()">TEST</button>-->
+      
+        <!--<button class="btn" id = "buttontest" >buttontest</button>-->
+        <br>
+        
+         
+
+        <div id="Music">
+        <h3>Play background music for best experience</h3>
+
+        <br>
+        <audio controls >
+         
+          
+            
+            <source src="THING.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+         </div>
+         
+
+
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
+    <script src="snow.js"></script>
+    <script src="game3.js"></script>
+    
+
 </body>
-<script src="snow.js"></script>
-
+<div id="snow-js">
+    
+   
 </html>
